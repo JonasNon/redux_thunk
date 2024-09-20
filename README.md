@@ -17,7 +17,7 @@ Today we are going to create a mock-import utility that we can use in our cars a
 * Now it's time to create our action. Remember this action is asynchronous, which is why we need thunk. As a reminder, asynchronous means that this bit of code could take an indeterminate amount of time to run because it relies on outside systems (an API on another server). We always handle these types of functions differently in JavaScript.
 
 * Go to `redux/actions.js` and create a function called `fetchMakes`. This function will not take any arguments. Inside of the function you need to make a "fetch" to the url defined at the top of the actions.js file. After the fetch call returns (remember how promises work), dispatch an action with a type = "FETCH_MAKES" and a value of "response.Results" (response is whatever you called it in the "then" promise chain). Note, if you copy/paste the url from actions into your browser you will see the data and the properties available.
-
+////////
 * Now that we have Redux configured for this action it's time to build out the component. Notice that there is an `Import.js` file underneath the "components" and "containers" folders. In fact, it's also already been tied into the router for you so if you navigate to "/import" you should see a line of text.
 
 * On this page you need to use `material-ui` to create a button and a table. Let's do that part first. Import Button, Table, TableHead, TableBody, TableRow and TableCell from "@material-ui/core". You may also want to import "Container" to help with styling. Remember to look at the Material UI docs if you don't understand how this works. 
