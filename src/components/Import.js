@@ -32,6 +32,9 @@ const Import = (props) => {
             <div style={{width: "98vw", display: "flex", justifyContent: "center", padding: "2vw"}}>
                 <Button onClick={() => props.fetchMakes()} variant="contained">Import</Button>
             </div>
+            <div style={{width: "98vw", display: "flex", justifyContent: "center", padding: "2vw"}}>
+                <h2>Count: {props.makes.length}</h2>
+            </div>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
